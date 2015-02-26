@@ -10,7 +10,9 @@ RUN wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key a
 RUN apt-get update
 RUN apt-get install -y jenkins
 RUN apt-get install -y git
-RUN apt-get install -y scala
+RUN wget http://www.scala-lang.org/files/archive/scala-2.11.4.deb 
+RUN dpkg -i scala-2.11.4.deb
+RUN rm -f scala-2.11.4.deb
 
 
 # now we install docker in docker - thanks to https://github.com/jpetazzo/dind
