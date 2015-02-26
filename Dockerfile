@@ -10,6 +10,7 @@ RUN wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key a
 RUN apt-get update
 RUN apt-get install -y jenkins
 RUN apt-get install -y git
+RUN apt-get install -y scala
 
 
 # now we install docker in docker - thanks to https://github.com/jpetazzo/dind
