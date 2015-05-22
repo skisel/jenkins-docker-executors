@@ -1,4 +1,4 @@
-FROM dockerfile/java:openjdk-7-jdk
+FROM java:openjdk-8u45-jdk
 MAINTAINER Michael Neale <mneale@cloudbees.com
 
 # First, let us install Jenkins - as per https://github.com/cloudbees/jenkins-docker
